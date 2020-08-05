@@ -116,7 +116,7 @@ public class LockingOptimisticTest {
             }
         });
 
-        assertTrue(testCountDownLatch.await(30, TimeUnit.SECONDS));
+        assertTrue(testCountDownLatch.await(50, TimeUnit.SECONDS));
         assertEquals("INCEPTION RU", movieBean.findMovie(3).getName());
     }
 
